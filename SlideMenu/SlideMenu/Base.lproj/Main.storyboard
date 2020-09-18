@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ROc-Jx-XVp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zTS-Ja-1Xx"/>
+                    <connections>
+                        <outlet property="sideMenuView" destination="FeK-by-rL9" id="jAm-i3-TRV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="FeK-by-rL9" customClass="MenuView" customModule="SlideMenu" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="439"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-Lv-sTY">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="439"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0ja-gZ-Vdg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="439"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="regular"/>
+                        </visualEffectView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99a-Hh-vYk">
+                            <rect key="frame" x="188" y="0.0" width="52" height="439"/>
+                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="tapCoverButton:" destination="FeK-by-rL9" eventType="touchUpInside" id="CAe-qn-lIA"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSv-t2-UeL">
+                            <rect key="frame" x="32" y="0.0" width="156" height="213.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-Hy-a46">
+                                    <rect key="frame" x="0.5" y="0.0" width="155" height="213"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSn-Vc-iqr">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46u-FD-XV9">
+                                            <rect key="frame" x="0.0" y="30.5" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Hoa hồng"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cu-Pv-fOG">
+                                            <rect key="frame" x="0.0" y="61" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Lịch sử"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc4-Zk-YV1">
+                                            <rect key="frame" x="0.0" y="91.5" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="SMS"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCF-Ld-ikR">
+                                            <rect key="frame" x="0.0" y="122" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Báo"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-z5-d6w">
+                                            <rect key="frame" x="0.0" y="152.5" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Log out"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRi-Ix-One">
+                                            <rect key="frame" x="0.0" y="183" width="155" height="30"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Bán"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="kN1-Hy-a46" firstAttribute="leading" secondItem="xSv-t2-UeL" secondAttribute="leading" constant="0.5" id="QiU-Yv-dhM"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="200" id="Rcc-jA-kuh"/>
+                                <constraint firstAttribute="trailing" secondItem="kN1-Hy-a46" secondAttribute="trailing" constant="0.5" id="YUd-eU-EnX"/>
+                                <constraint firstItem="kN1-Hy-a46" firstAttribute="top" secondItem="xSv-t2-UeL" secondAttribute="top" id="ZGR-Ad-c9i"/>
+                                <constraint firstAttribute="bottom" secondItem="kN1-Hy-a46" secondAttribute="bottom" constant="0.5" id="brB-Pg-xCR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xSv-t2-UeL" firstAttribute="width" secondItem="FeK-by-rL9" secondAttribute="width" multiplier="0.65" id="12A-wo-YlW"/>
+                        <constraint firstItem="3cP-e3-2lJ" firstAttribute="bottom" secondItem="9S6-Lv-sTY" secondAttribute="bottom" id="3q7-Oo-Hu4"/>
+                        <constraint firstItem="9S6-Lv-sTY" firstAttribute="leading" secondItem="3cP-e3-2lJ" secondAttribute="leading" id="Avr-6e-W2O"/>
+                        <constraint firstItem="xSv-t2-UeL" firstAttribute="top" secondItem="FeK-by-rL9" secondAttribute="top" id="KL7-ip-o4A"/>
+                        <constraint firstItem="9S6-Lv-sTY" firstAttribute="top" secondItem="FeK-by-rL9" secondAttribute="top" id="O9p-1a-9iN"/>
+                        <constraint firstAttribute="trailing" secondItem="99a-Hh-vYk" secondAttribute="trailing" id="Slh-qF-aL5"/>
+                        <constraint firstAttribute="bottom" secondItem="99a-Hh-vYk" secondAttribute="bottom" id="Xb1-Al-c5U"/>
+                        <constraint firstItem="99a-Hh-vYk" firstAttribute="leading" secondItem="FeK-by-rL9" secondAttribute="trailing" constant="-52" id="Zym-FZ-p57"/>
+                        <constraint firstItem="99a-Hh-vYk" firstAttribute="top" secondItem="FeK-by-rL9" secondAttribute="top" id="eRe-Ss-4t1"/>
+                        <constraint firstItem="xSv-t2-UeL" firstAttribute="leading" secondItem="3cP-e3-2lJ" secondAttribute="leading" constant="32" id="rqy-Hf-LDj"/>
+                        <constraint firstItem="9S6-Lv-sTY" firstAttribute="trailing" secondItem="3cP-e3-2lJ" secondAttribute="trailing" id="xXj-1g-bmC"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="3cP-e3-2lJ"/>
+                    <connections>
+                        <outlet property="controlConstraint" destination="rqy-Hf-LDj" id="NYy-ju-byE"/>
+                        <outlet property="corverButton" destination="99a-Hh-vYk" id="SIU-TB-6pw"/>
+                        <outlet property="effectView" destination="9S6-Lv-sTY" id="VT7-Go-4om"/>
+                        <outlet property="historyButton" destination="9cu-Pv-fOG" id="axb-0W-Tkf"/>
+                        <outlet property="logoutButton" destination="dTH-z5-d6w" id="9jt-mh-1vC"/>
+                        <outlet property="menu" destination="xSv-t2-UeL" id="xgY-k1-wXW"/>
+                        <outlet property="noticeButton" destination="gCF-Ld-ikR" id="Jqc-yy-Mct"/>
+                        <outlet property="revenueButton" destination="46u-FD-XV9" id="UMI-8N-u5q"/>
+                        <outlet property="sellPointButton" destination="aRi-Ix-One" id="Tfm-Ni-rwU"/>
+                        <outlet property="smsButton" destination="Qc4-Zk-YV1" id="ZZa-th-Nxy"/>
+                    </connections>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ht2-pn-yt5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ROc-Jx-XVp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eRs-63-dwq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P0U-iR-r2Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQe-FD-2F7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
